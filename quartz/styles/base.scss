@@ -1,10 +1,17 @@
 @use "./variables.scss" as *;
 @use "./syntax.scss";
 @use "./callouts.scss";
+
 @font-face {
   font-family: 'Universalis';
   src: url(../static/fonts/Universalis/UniversalisADFStd-Regular.otf)
 }
+
+@font-face {
+  font-family: 'Klarissa';
+  src: url(../static/fonts/Klarissa/klarissa.regular.ttf)
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -78,7 +85,7 @@ a {
     text-decoration: none;
     background-color: var(--highlight);
     padding: 0 0.1rem;
-    border-radius: 5px;
+    border-radius: 1px;
     line-height: 1.4rem;
 
     &:has(> img) {
