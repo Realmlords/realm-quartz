@@ -148,7 +148,7 @@ a {
   & > #quartz-body {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     @media all and (max-width: $fullPageWidth) {
       flex-direction: column;
     }
