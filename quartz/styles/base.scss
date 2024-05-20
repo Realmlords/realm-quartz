@@ -515,7 +515,7 @@ video {
 
 ul.overflow,
 ol.overflow {
-  max-height: 400;
+  height: fit-content;
   overflow-y: auto;
 
   // clearfix
