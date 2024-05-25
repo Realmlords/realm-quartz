@@ -270,7 +270,8 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
             replacements.push([
               highlightRegex,
               (_value: string, ...capture: string[]) => {
-                const [inner] = capture
+                var [inner] = capture
+                inner = inner.replaceAll(/./g, "█");
                 return {
                   type: "html",
                   value: `<span class="text-highlight">${inner}</span>`,
