@@ -20,6 +20,13 @@ export const SpoilerRemover: QuartzTransformerPlugin<Partial<Options> | undefine
           src = src.toString()
         }
         src = src.split("#spoiler")[0];
+
+        const stringArray = src.split('||');
+        src = stringArray.map((string, index) => 
+            index%2 === 0
+              ? string 
+            : string.split("").map(char => "█").join("")
+        ).join("");
       
       return src
     },
