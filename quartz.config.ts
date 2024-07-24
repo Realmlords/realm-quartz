@@ -11,7 +11,8 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "realmlords.dev",
-    ignorePatterns: ["private", "templates", ".obsidian", "Images/ItemCards", "Hexmaps", "Images/MarsReferenceMap.png"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Images/ItemCards", "Hexmaps", "Images/MarsReferenceMap.png",
+      "Images/MarsReferenceMap.xcf"],
     defaultDateType: "created",
     theme: {
       typography: {
