@@ -1,0 +1,1 @@
+npx quartz build --serve -d "C:\Users\cj09d\Google Drive\Shrinelands\WizardWars"
